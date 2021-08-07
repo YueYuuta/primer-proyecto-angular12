@@ -1,0 +1,44 @@
+<header class="header">
+    <nav class="nav containerPersonal">
+        <a class="nav__logo">Junior</a>
+
+        <div class="nav__menu" [ngClass]="showMenu === true ? 'show-menu ':'hide-menu'">
+            <ul class="nav__list grid">
+                <li class="nav__item">
+                    <a class="nav__link"><i class="fas fa-home nav__icon"></i>
+                        Inicio</a>
+                </li>
+
+                <li class="nav__item">
+                    <a class="nav__link"><i class="fas fa-user nav__icon"></i>
+                        Acerca</a>
+                </li>
+
+
+                <li class="nav__item">
+                    <a class="nav__link"><i class="fas fa-home nav__icon"></i>
+                        Servicio</a>
+                </li>
+
+                <li class="nav__item">
+                    <a class="nav__link"><i class="fas fa-home nav__icon"></i>
+                        Experiencia</a>
+                </li>
+
+                <li class="nav__item">
+                    <a class="nav__link"><i class="fas fa-home nav__icon"></i>
+                        otro</a>
+                </li>
+
+            </ul>
+            <i class="fas fa-times nav__close" (click)="cambioEstadoMenu()"></i>
+        </div>
+        <div class="nav__btns">
+            <!-- cambio de tema -->
+            <i class="change-theme far fa-moon"></i>
+            <div class="nav__toggle" (click)="cambioEstadoMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+</header>

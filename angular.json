@@ -24,7 +24,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/main.css"
+              
             ],
             "scripts": []
           },
@@ -119,6 +121,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "primer-proyecto"
+    }
+  },
+  "defaultProject": "primer-proyecto",
+  "cli": {
+    "analytics": false
+  }
 }
